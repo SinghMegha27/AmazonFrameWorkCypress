@@ -1,0 +1,24 @@
+{
+  "name": "amazoncypressframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest": "npm run test --headed",
+    "browserTest": "npm run test -- --browser chrome",
+    "run1": "node_modules/.bin/cypress",
+    "dashboard": "npm run test -- --record --key e90d6580-de9e-4d5c-aab8-a0447e78c074"
+  },
+  "author": "Megha",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.4.0"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.6.1"
+  }
+}
