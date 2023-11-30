@@ -8,7 +8,7 @@
     "headTest": "npm run test --headed",
     "browserTest": "npm run test -- --browser chrome",
     "run1": "node_modules/.bin/cypress",
-    "dashboard": "npm run test -- --record --key e90d6580-de9e-4d5c-aab8-a0447e78c074"
+    "dashboard": "npm run test -- --record --key d1e2f270-99e0-4311-8d9c-5640330c197a"
   },
   "author": "Megha",
   "license": "ISC",
