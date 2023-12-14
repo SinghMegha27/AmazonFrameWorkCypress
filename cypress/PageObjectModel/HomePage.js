@@ -10,7 +10,7 @@ const selectors = {
         searchResultText : ".a-spacing-top-small>span.a-text-bold",
         matchingResultText : ".s-line-clamp-2>a",
         languageNameText : ".a-color-secondary>div>span.a-color-secondary:first-of-type",
-        productsearchresults : "span.a-text-normal",
+        productsearchresults : "a>span.a-text-normal",
     },
     link : {
         sigin : "#nav-link-accountList",
