@@ -5,12 +5,14 @@ const selectors = {
     button : {
         signInButton  : "#nav-search-submit-button",
         languagesBox : "#p_n_feature_three_browse-bin-title+ul>span>li>span>a>div+span",
+        languagesCheckboxes : "#p_n_feature_three_browse-bin-title+ul>span>span>li>span>a>div>label>input+i"
     },
     label : {
         searchResultText : ".a-spacing-top-small>span.a-text-bold",
         matchingResultText : ".s-line-clamp-2>a",
         languageNameText : ".a-color-secondary>div>span.a-color-secondary:first-of-type",
         productsearchresults : "a>span.a-text-normal",
+        languagesOptionName : "#p_n_feature_three_browse-bin-title+ul>span>span>li>span>a>span"
     },
     link : {
         sigin : "#nav-link-accountList",
@@ -47,10 +49,9 @@ class HomePage{
         })
     }
     checkBoxElements(value){
-        cy.get(selectors.button.languagesBox).each(($x, index, $list)=>{
-            let x = $x.text();
-            if(x==value){
-                cy.wrap($x).click();
+        cy.get(selectors.label.languagesOptionName).each(($el, index, $arr)=>{
+            if($el.text()==value){
+                cy.get(selectors.button.languagesCheckboxes).eq(index).click();
             }
         })
     }
